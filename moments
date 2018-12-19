@@ -1,0 +1,23 @@
+Recognition of objects and patterns,three major approach:
+1.brute force,
+search the parametric space of all possible image degradations
+extreme time complexity,practically inapplicable
+
+2.image normalization,
+the objects are transformed into a certain standard position before they enter the classifier
+efficient in the classification stage but the object normalization
+itself usually requires solving difficult inverse problems that are often illconditioned or even ill-posed
+
+3.invariant feature
+invariant I, degradation operator D, satisfies the condition I(f) = I(D(f)), for any image function f.
+This property is called invariance
+Another desirable property of I, as important as invariance, is discriminability. 
+For objects belonging to different classes, I must have significantly different values. 
+
+
+• Simple shape descriptors – compactness, convexity, elongation, etc.
+• Transform coefficient features are calculated from a certain transform of the image – 
+Fourier descriptors , Hadamard descriptors, Radon transform coefficients, and wavelet-based features ,
+• Point set invariants use positions of dominant points 
+• Differential invariants employ derivatives of the object boundary
+• Moment invariants are special functions of image moments.
